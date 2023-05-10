@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volker's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" href="vicon.ico">
+</head>
+<body>
+    
+    <header id="header">
+        <a href="index.html" class="logo">Volker.</a>
+
+        <nav class="navbar">
+            <a id="nb-home" href="index.html" class="active" >Home</a>
+            <a id="nb-about" href="#about-sect">About</a>
+            <a id="nb-services" href="#services-h3">Services</a>
+            <a id="nb-portfolio" href="#">Portfolio</a>
+            <a id="nb-contact" href="#">Contact</a>
+        </nav>
+    </header>
+
+    <section class="home">
+        <div class="home-content">
+            <h1>Hi, I'm Volker</h1>
+            <h3>Fullstack Developer</h3>
+            <p>Developer with experience in creating websites and web applications using technologies such as HTML, CSS, and JavaScript, among others. I am passionate about working on challenging projects and helping my clients take their ideas to the next level.</p>
+            <div class="btn-box">
+                <a href="#services-h3">Pricing</a>
+                <a href="#">Let's Talk</a>
+            </div>
+        </div>
+
+        <div class="home-sci">
+            <a href="#"><i class='bx bxl-discord-alt'></i></a>
+            <a href="https://api.whatsapp.com/send?phone=5493364197843" target="_blank"><i class='bx bxl-whatsapp' ></i></a>
+            <a href="#"><i class='bx bx-envelope' ></i></a>
+        </div>
+        <span class="home-imgHover"></span>
+    </section>
+    
+    <section class="about-sect" id="about-sect">
+        <h3 class="about-h3 hidden">About <span class="h3-color">Me</span></h3>
+        <div class="about-img-wrapper hidden">
+            <img src="volkita.jpg" class="volkita">
+            <div class="volkitadeco"></div>
+        </div>
+        
+        <h3 class="about-name">Ramiro Volker</h3>
+        
+        <p class="about-p">Hello! My name is <b>Ramiro Volker</b>, I am 18 years old, and I was born and live in Argentina. I finished high school with a degree in Electronic Technology
+             and I am currently studying <b>Systems Engineering</b>. I started programming and web development in 2021, taking online courses, bootcamps, and training programs. Currently,
+              I am dedicated to expanding my skills as a Fullstack Developer and providing my services to individuals or companies looking for aesthetically pleasing and eye-catching
+               designs with excellent functionality adapted for any user.</p>
+    </section>
+
+    <section class="services-sect">
+
+        <h3 id="services-h3" class="services-h3 hidden">Serv<span class="h3-color">ices</span></h3>
+        <div class="services-grid">
+            <div class="services-card" id="service-card1">
+                <img src="webdevelopment.jpg">
+                <h4 class="card-h4">Web Development</h4>
+                <p>Diseñaré y fabricaré una página web personalizada a tu gusto y necesidades. Te ayudaré con los diseños y funciones que necesites
+                     para lograr esa web que tanto deseas utilizando tecnologías como HTML, CSS, JavaScript, PHP y React.</p>
+                <button class="services-card-cta">Starting At US$80</button>
+            </div>
+            <div class="services-card" id="service-card2">
+                <img src="webdevelopment.jpg">
+                <h4 class="card-h4">Web Development</h4>
+                <p>Diseñaré y fabricaré una página web personalizada a tu gusto y necesidades. Te ayudaré con los diseños y funciones que necesites
+                     para lograr esa web que tanto deseas utilizando tecnologías como HTML, CSS, JavaScript, PHP y React.</p>
+                <button class="services-card-cta">Starting At US$80</button>
+            </div>
+        </div>
+    </section>
+</body>
+<script src="script.js"></script>
+</html>
