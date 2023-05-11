@@ -6,9 +6,15 @@ function scrollanimacion(){
     var objetoAnimar = document.getElementById("header");
     var posObj = objetoAnimar.getBoundingClientRect().top;
 
-    if(window.scrollY >= 200){
+    //console.log(window.scrollY);
+
+    if(window.scrollY >= 2800){
+        objetoAnimar.style.backgroundColor = "var(--secondcolor)";
+    }
+    else if(window.scrollY >= 200){
         objetoAnimar.style.backgroundColor = "rgb(8,27,41)";
     }
+    
     else{
         objetoAnimar.style.backgroundColor = "transparent";
     }
@@ -16,7 +22,8 @@ function scrollanimacion(){
 
     var home = document.getElementById("nb-home");
     var about = document.getElementById("nb-about");
-    var services = document.getElementById("nb-services")
+    var services = document.getElementById("nb-services");
+    var portfolio = document.getElementById("nb-portfolio");
 
     if(window.scrollY < 600){
         home.classList.add("active");
@@ -31,8 +38,15 @@ function scrollanimacion(){
     
 
     if(window.scrollY >= 1600){
-        about.classList.remove("active")
+        about.classList.remove("active");
         services.classList.add("active");
+        portfolio.classList.remove("active");
+    }
+
+    if(window.scrollY >= 2500){
+        about.classList.remove("active");
+        services.classList.remove("active");
+        portfolio.classList.add("active");
     }
 }
 
@@ -72,8 +86,26 @@ const observer3 = new IntersectionObserver((entries3) =>{
     })
 })
 
+const observer4 = new IntersectionObserver((entries4) =>{
+    entries4.forEach((entry) => {
+        if(entry.isIntersecting){
+            document.querySelectorAll(".portfolio-card").forEach((el5) => {
+                el5.style.animationName = "cardspawn"
+                
+            })
+        }
+    })
+})
+
 observer2.observe(document.querySelector(".about-name"));
 observer3.observe(document.getElementById("service-card1"));
+observer4.observe(document.querySelector(".portfolio-grid"));
+document.querySelectorAll(".hidden4").forEach((el4) => observer4.observe(el4));
+
+
+const gridCards = document.getElementById("portfolio-grid");
+
+//gridCards.addEventListener("mouseover", hovercard);
 
 
 
