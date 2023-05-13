@@ -652,3 +652,102 @@ header{
     width: 35px;
     border-radius: 5px;
 }
+
+.contact-sect{
+    width: 100%;
+    min-height: 100vh;
+    min-height: 930px;
+    padding: 5rem 10% 2rem 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.contact-sect::after{
+    content: "";
+    background-image: url(./contactbg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    filter: brightness(0.4);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+}
+
+.contact-sect::before{
+    content: "";
+  background-color: rgb(17, 46, 66,0.4);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.contact-sect-h3{
+    color: #ededed;
+    position: relative;
+    font-size:  3.5rem;
+    color: #ededed;
+    width: max-content;
+    margin: 1.5rem auto;
+    filter: drop-shadow(0px 0px 15px #121212);
+}
+
+.contact-form{
+    width: 50vw;
+    background-color: var(--secondcolor);
+    min-height: 500px;
+    border-radius: 8px;
+    padding: 1.5rem;
+    display: flex;
+    flex-flow: column;
+}
+
+form p input, form p textarea{
+    outline: none;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 0.5rem;
+    background-color: var(--realwhite);
+}
+
+form p{
+    display: flex;
+    flex-flow: column;
+}
+
+input::placeholder, textarea::placeholder{
+    color: #ababab;
+}
+
+textarea{
+    resize:none;
+}
+
+.contact-btn-send{
+    background-color: var(--maincolor);
+    padding: 0.8rem 2rem;
+    border-radius: 5px;
+    border: 1px solid var(--secondcolor);
+    border:none;
+    color: var(--secondcolor);
+    font-weight: 600;
+    cursor: pointer;
+    align-self: center;
+    margin-top: 1rem;
+    transition: all 0.4s ease;
+}
+
+.contact-btn-send:hover{
+    color: var(--maindarkcolor);
+    background-color: var(--lightwhite);
+    box-shadow: 0 0 15px var(--lightwhite);
+}

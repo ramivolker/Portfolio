@@ -17,7 +17,7 @@
         <nav class="navbar">
             <a id="nb-home" href="index.html" class="active" >Home</a>
             <a id="nb-about" href="#about-sect">About</a>
-            <a id="nb-services" href="#services-h3">Services</a>
+            <a id="nb-services" href="#services-sect">Services</a>
             <a id="nb-portfolio" href="#portfolio-sect">Portfolio</a>
             <a id="nb-contact" href="#">Contact</a>
         </nav>
@@ -29,7 +29,7 @@
             <h3>Fullstack Developer</h3>
             <p>Developer with experience in creating websites and web applications using technologies such as HTML, CSS, and JavaScript, among others. I am passionate about working on challenging projects and helping my clients take their ideas to the next level.</p>
             <div class="btn-box">
-                <a href="#services-h3">Pricing</a>
+                <a href="#services-sect">Pricing</a>
                 <a href="#">Let's Talk</a>
             </div>
         </div>
@@ -57,7 +57,7 @@
                designs with excellent functionality adapted for any user.</p>
     </section>
 
-    <section class="services-sect">
+    <section class="services-sect" id="services-sect">
 
         <h3 id="services-h3" class="services-h3 hidden">Serv<span class="h3-color">ices</span></h3>
         <div class="services-grid">
@@ -145,6 +145,41 @@
             </div>
 
         </div>
+    </section>
+
+    <section class="contact-sect" id="contact-sect">
+        <h3 class="contact-sect-h3">Contact <span class="h3-color">Me</span></h3>
+        <form class="contact-form">
+            
+                <form target="_blank" action="https://formsubmit.co/ramiro.volker@hotmail.com" method="POST">
+                    <p>
+                        <label for="fullname">Full Name</label>
+                        <input type="text" name="fullname" id="fullname" placeholder="John Doe">
+                    </p>
+                    <p>
+                        <label for="email">Email Adress</label>
+                        <input type="email" name="email" id="email" placeholder="johndoe@gmail.com" required>
+                    </p>
+                    <p>
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" name="phone" id="phone" placeholder="+543364197843">
+                    </p>
+                    <p>
+                        <label for="afair">Affair</label>
+                        <input type="text" name="affair" id="afair" placeholder="Personalized Website" required>
+                    </p>
+                    <p class="block">
+                       <label for="message">Message</label> 
+                        <textarea name="message" required id="message" rows="3" placeholder="Hi, I want a personalized website!"></textarea>
+                    </p>
+                    <p class="block">
+                        <button class="contact-btn-send" type="submit">Enviar</button>
+                        <input class="contact-btn-send" type="submit" value="Enviar">
+
+                    </p>
+                </form>
+    
+        </form>
     </section>
 </body>
 <script src="script.js"></script>
