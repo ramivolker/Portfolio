@@ -571,6 +571,7 @@ header{
     flex-flow: column;
     transition: scale 0.5s ease;
     height: 100%;
+    text-decoration: none;
 
     opacity: 0;
     filter: blur(1);
@@ -744,6 +745,7 @@ textarea{
     align-self: center;
     margin-top: 1rem;
     transition: all 0.4s ease;
+    font-size: 1.2rem;
 }
 
 .contact-btn-send:hover{

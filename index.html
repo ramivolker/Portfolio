@@ -19,7 +19,7 @@
             <a id="nb-about" href="#about-sect">About</a>
             <a id="nb-services" href="#services-sect">Services</a>
             <a id="nb-portfolio" href="#portfolio-sect">Portfolio</a>
-            <a id="nb-contact" href="#">Contact</a>
+            <a id="nb-contact" href="#contact-sect">Contact</a>
         </nav>
     </header>
 
@@ -30,7 +30,7 @@
             <p>Developer with experience in creating websites and web applications using technologies such as HTML, CSS, and JavaScript, among others. I am passionate about working on challenging projects and helping my clients take their ideas to the next level.</p>
             <div class="btn-box">
                 <a href="#services-sect">Pricing</a>
-                <a href="#">Let's Talk</a>
+                <a href="#contact-sect">Let's Talk</a>
             </div>
         </div>
 
@@ -82,7 +82,7 @@
         <h3 id="portfolio-h3" class="portfolio-h3 hidden">Port<span class="h3-color">folio</span></h3>
         <div class="portfolio-grid" id="portfolio-grid">
 
-            <div class="portfolio-card hidden4" id="pcard1">
+            <a class="portfolio-card hidden4" id="pcard1" href="https://ramivolker.github.io/Volker-Electronics/" target="_blank">
                 <img src="./gridcards/sVolkerElectronics.jpg" class="portfolio-card-img">
                 <h4 class="portfolio-card-h4">Volker Electronics</h4>
                 <p class="portfolio-card-p">First attempt of e-commerce website made for a academic capacitation.</p>
@@ -90,9 +90,9 @@
                     <img class="portfolio-card-tech-img" src="./gridcards/htmllogo.jpg" draggable="false">
                     <img class="portfolio-card-tech-img" src="./gridcards/csslogo.jpg" draggable="false">
                 </div>
-            </div>
+            </a>
 
-            <div class="portfolio-card hidden4" id="pcard2">
+            <a class="portfolio-card hidden4" id="pcard2" href="https://ramivolker.github.io/EyeTrackerTrivia/" target="_blank">
                 <img src="./gridcards/sTriveye.jpg" class="portfolio-card-img">
                 <h4 class="portfolio-card-h4">Triveye</h4>
                 <p class="portfolio-card-p">A trivia game for my college project made with JavaScript. It can be controlled by your eyes.</p>
@@ -101,9 +101,9 @@
                     <img class="portfolio-card-tech-img" src="./gridcards/csslogo.jpg" draggable="false">
                     <img class="portfolio-card-tech-img" src="./gridcards/jslogo.jpg" draggable="false">
                 </div>
-            </div>
+            </a>
 
-            <div class="portfolio-card hidden4" id="pcard3">
+            <a class="portfolio-card hidden4" id="pcard3" href="https://ramivolker.github.io/OldPortfolio/" target="_blank">
                 <img src="./gridcards/sOldPortfolio.jpg" class="portfolio-card-img">
                 <h4 class="portfolio-card-h4">Old Portfolio Website</h4>
                 <p class="portfolio-card-p">Old Website i made for a FreeCodeCamp course.</p>
@@ -111,9 +111,9 @@
                     <img class="portfolio-card-tech-img" src="./gridcards/htmllogo.jpg" draggable="false">
                     <img class="portfolio-card-tech-img" src="./gridcards/csslogo.jpg" draggable="false">
                 </div>
-            </div>
+            </a>
 
-            <div class="portfolio-card hidden4" id="pcard4">
+            <a class="portfolio-card hidden4" id="pcard4" href="https://ramivolker.github.io/ProductLandingPage/" target="_blank">
                 <img src="./gridcards/sSnew.jpg" class="portfolio-card-img">
                 <h4 class="portfolio-card-h4">Snew</h4>
                 <p class="portfolio-card-p">Simple Product Landing Page</p>
@@ -121,9 +121,9 @@
                     <img class="portfolio-card-tech-img" src="./gridcards/htmllogo.jpg" draggable="false">
                     <img class="portfolio-card-tech-img" src="./gridcards/csslogo.jpg" draggable="false">
                 </div>
-            </div>
+            </a>
 
-            <div class="portfolio-card hidden4" id="pcard5">
+            <a class="portfolio-card hidden4" id="pcard5" href="https://ramivolker.github.io/JSDocumentation/" target="_blank">
                 <img src="./gridcards/sJSDoc.jpg" class="portfolio-card-img">
                 <h4 class="portfolio-card-h4">JS Documentation</h4>
                 <p class="portfolio-card-p">JavaScript Documentation Page</p>
@@ -131,9 +131,9 @@
                     <img class="portfolio-card-tech-img" src="./gridcards/htmllogo.jpg" draggable="false">
                     <img class="portfolio-card-tech-img" src="./gridcards/csslogo.jpg" draggable="false">
                 </div>
-            </div>
+            </a>
 
-            <div class="portfolio-card hidden4" id="pcard6">
+            <a class="portfolio-card hidden4" id="pcard6" href="https://ramivolker.github.io/investorsPage/" target="_blank">
                 <img src="./gridcards/sInvestorsPage.jpg" class="portfolio-card-img">
                 <h4 class="portfolio-card-h4">Investors Page JS</h4>
                 <p class="portfolio-card-p">Inversions Profit Calculator</p>
@@ -142,14 +142,14 @@
                     <img class="portfolio-card-tech-img" src="./gridcards/csslogo.jpg" draggable="false">
                     <img class="portfolio-card-tech-img" src="./gridcards/jslogo.jpg" draggable="false">
                 </div>
-            </div>
+            </a>
 
         </div>
     </section>
 
     <section class="contact-sect" id="contact-sect">
         <h3 class="contact-sect-h3">Contact <span class="h3-color">Me</span></h3>
-        <form class="contact-form">
+        <div class="contact-form">
             
                 <form target="_blank" action="https://formsubmit.co/ramiro.volker@hotmail.com" method="POST">
                     <p>
@@ -174,12 +174,11 @@
                     </p>
                     <p class="block">
                         <button class="contact-btn-send" type="submit">Enviar</button>
-                        <input class="contact-btn-send" type="submit" value="Enviar">
 
                     </p>
                 </form>
     
-        </form>
+            </div>
     </section>
 </body>
 <script src="script.js"></script>
